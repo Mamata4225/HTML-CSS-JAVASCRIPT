@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="icon" href="img/homepage.jpg">
+    <style>
+        
+        body{
+   min-height: 100%;
+   background-image: url(img/th.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+}
+  
+  
+        header{
+            height: 130px;
+            display: flex;
+            flex-direction: row;
+ }
+ ul{
+     list-style-type: none;
+ }
+ li{
+     display: inline-block;
+     margin-right: 30px;
+ }
+ header > div{
+     width: 200px;
+     height: 97px;
+ }
+ nav{
+     height: 50px;
+     margin-top: 30px;
+     border: rgb(223, 121, 223);
+ }
+ nav > div{ 
+     display: flex;
+     justify-content: flex-end;
+
+ }
+ a:link{
+     font-size: 20px;
+     text-decoration:rgb(179, 216, 104) ;
+ }
+ a:hover{
+     background-color: rgb(182, 149, 247);
+     text-decoration: underline;
+ }
+ .logo{
+
+     width: 186px;
+     padding: 4px;
+     border-radius: 50px solid red;
+ }
+ .hospital-name{
+     text-align: center;
+ }
+ .hospital-name{
+     font-size: 40px;
+     position: 
+     margin-top 1px;
+     font-family:cursive;
+ }
+ p::first-letter{
+     font-size: 60px;
+     color: turquoise;
+     text-shadow: 2px 3px 3px rgb(26, 75, 26);
+ }
+ .img{
+     text-align: center;
+     height: 400px;
+
+     margin-left: 2px;
+     margin-right: 2px;
+     width: 500px;
+ }
+ .html{
+     background: url(img/th\ \(1\).jpg) no-repeat center center fixed;
+   
+ }
+ .fixed-header, .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        padding: 10px 0;
+    }
+    .fixed-header{
+        top: 0;
+    }
+ .fixed-footer{
+        bottom: 0;
+    }
+
+ 
+    </style>
+</head>
+<body>
+    <header>
+        <div><img class="logo" src="img/hp0.jpg"></div>
+        <div class="hospital-name" style="flex-grow: 2;"><span class="hospital-text"><p>SHREEGOURI HOSPITAL</p></span></div>
+    </header>
+    <nav>
+        <div>
+            <ul>
+                <li> <a href="about.html" title="See about Hospital">ABOUT</a></li>
+                <li> <a href="RegistrationPage1.html" title="Go for Registration">REGISTER</a></li>
+                <li> <a href="Specialist1.html"title="Select your Specialist">CHOOSE SPECIALIST</a></li>
+                <li> <a href="Appointment1.html"title="Take your Appointment">APPOINTMENT</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="fixed-footer">
+        <div class="container">Copyright &copy; 2021 Your Hospital</div>        
+    </div>
+</body>
+</html>
