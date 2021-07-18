@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN PAGE</title>
+    <style>
+        body{
+    background-color: rgb(241, 240, 146);
+}
+.center-screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    padding: 20px;
+background-color: rgb(175, 195, 226);
+/*background-origin: 2px solid red;*/
+position: absolute;
+left: 50px ;
+right: 50px ;
+margin-top: 50px;
+border: 5px solid rgb(245, 245, 245);
+box-shadow: 1px 7px 6px 5px gray;
+}
+.center-screen > div{
+    padding: 5px;
+    
+}
+input{
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+}
+input::placeholder{
+    text-align: center;
+}
+.submit{
+    height: 39px;
+    width: 209px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.submit:hover{
+    background-color: green;
+    color:white;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="center-screen">
+        <h1>LoginPage</h1>
+
+    <div>
+<input placeholder="Enter Name">
+    </div>
+    <div>
+        <input placeholder="Password">
+    </div>
+    <button class="submit">Submit</button>
+    </div>
+
+</body>
+</html>
+
