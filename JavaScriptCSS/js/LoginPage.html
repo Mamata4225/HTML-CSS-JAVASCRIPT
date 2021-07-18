@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+     function login(){
+            var user = document.getElementById('user').value;
+            var pass = document.getElementById('pass').value;
+
+            var username = localStorage.getItem('username');
+            var Password = localStorage.getItem('password');
+
+            if(user==username && pass==password){
+                 alert(`Login successfully with:${user}`);
+                 window.location.href='formValidate.html';
+            return true;
+        }else{
+            alert('invalid user or password')
+            return false;
+        }
+    }
+    </script>
+</head>
+<body>
+    <h1>User Login</h1>
+    <form>
+        username:<input type="text" id='user'><br>
+        password:<input type="password" id='pass'><br>
+        <input type="button" onclick=" return login()" value="Login">
+    </form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function Create(){
+            var user = document.getElementById('user').value;
+            var pass = document.getElementById('pass').value;
+            localStorage.setItem('userName',user);
+            localStorage.setItem('password',pass);
+        }
+    </script>
+</head>
+<body>
+<h1>User Create page</h1>
+<form>
+    username:<input type="text" id='user'><br>
+    password:<input type="password" id='pass'><br>
+    <input type="button" onclick="create()" value="Create">
+</form>    
+</body>
+</html>

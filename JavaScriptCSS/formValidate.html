@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration page</h1>
+    <form action ="reg.java" method="POST">
+        <div>
+            <label>UserName:</label>
+            <input type="text" name="user" id="user">
+        </div>
+
+        <div>
+            <label>Password:</label>
+            <input type="passsword" name="pass" id="pass">
+        </div>
+        <div>
+            <div>
+                <label>Select Place</label>
+                <select name="place" id="place">
+                    <option value="0">-select-</option>
+                    <option value="1">Hassan</option>
+                    <option value="2">Bangalore</option>
+                    <option value="3">Shimogga</option>
+                </select>
+                <div>
+                    <label>Gender</label>
+                    <input type="radio" name="gender" id="gender" value="Male">Male
+                    <input type="radio" name="gender" id="gender" value="Female">Female
+                </div>
+<br>
+<button onclick="return formValiadation()">Create Account</button>
+            </div>
+                <div>
+                    <label>Address1</label>
+                    <textarea rows="5" cols="15" id="add1" placeholder="Max 250 char"></textarea>
+                </div>
+                <input type="button" onclick="addCopy()" value="Copy">
+                <div>
+                    <label>Address2</label>
+                    <textarea rows="5" cols="15" id="add2"></textarea>
+                </div>
+                <br>
+              <button onclick="return formValiadation()">Create Account</button>
+            
+        </div>
+</body>
+</html>
